@@ -56,9 +56,11 @@
   }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1440px) {
   .section-title {
-    margin-bottom: 80px;
+    margin: 0 auto 80px;
+    max-width: 560px;
+    text-align: center;
   }
 
   .feedbacks-list {
