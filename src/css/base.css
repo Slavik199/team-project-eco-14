@@ -16,12 +16,8 @@ main:has(.back-link) {
   text-align: center;
 }
 
-.section {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .section-title {
+  font-family: 'Comfortaa', sans-serif;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
@@ -42,13 +38,6 @@ main:has(.back-link) {
   font-size: 16px;
   line-height: 1.6;
   color: #fff;
-}
-
-@media screen and (min-width: 768px) {
-  .section {
-    padding-top: 64px;
-    padding-bottom: 64px;
-  }
 }
 
 @media screen and (min-width: 1440px) {
