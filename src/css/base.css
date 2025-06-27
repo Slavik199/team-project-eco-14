@@ -1,10 +1,12 @@
-
 body {
   display: flex;
   flex-direction: column;
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+  color: #030a06;
+  background-color: #ebf8ed;
 }
 
 main {
@@ -12,4 +14,34 @@ main {
 }
 main:has(.back-link) {
   text-align: center;
+}
+
+.section-title {
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+.section-text {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.section-btn {
+  border: 1px solid #030a06;
+  border-radius: 6px;
+  padding: 12px 24px;
+  height: 50px;
+  background-color: #030a06;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+@media screen and (min-width: 1440px) {
+  .section-title {
+    font-size: 48px;
+  }
 }
