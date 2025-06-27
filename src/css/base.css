@@ -42,6 +42,6 @@ main:has(.back-link) {
 
 @media screen and (min-width: 1440px) {
   .section-title {
-    font-size: 56px;
+    font-size: 48px;
   }
 }
