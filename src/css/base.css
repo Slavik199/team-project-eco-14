@@ -4,6 +4,9 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+  font-family: 'Fira Sans', sans-serif;
+  color: #030a06;
+  background-color: #ebf8ed;
 }
 
 main {
