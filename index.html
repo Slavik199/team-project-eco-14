@@ -55,7 +55,38 @@
 
     <main>
       <!-- Loads the specified .html file -->
-      
+      <section class="hero">
+  <div class="container hero-container">
+    <h1 class="hero-title">EcoTote — Стиль, що не шкодить планеті.</h1>
+    <p class="hero-text">
+      Екологічні сумки для тих, хто дбає про майбутнє. Обирайте стиль та
+      відповідальність разом з EcoTote.
+    </p>
+    <a href="#assortment" class="hero-btn">Купити зараз</a>
+    <picture>
+      <source
+        srcset="../img/hero/hero-image-desktop.jpg 1x, ../img/hero/hero-image-desktop-2x.jpg 2x"
+        media="(min-width: 1440px)"
+      />
+      <source
+        srcset="../img/hero/hero-image-tablet.jpg 1x, ../img/hero/hero-image-tablet-2x.jpg 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="../img/hero/hero-image-mobile.jpg 1x, ../img/hero/hero-image-mobile-2x.jpg 2x"
+        media="(max-width: 767px)"
+      />
+      <img
+        class="hero-image"
+        src="../img/hero/hero-image-mobile.jpg"
+        width="1312"
+        height="498"
+        alt="Eco Bags"
+      />
+    </picture>
+  </div>
+</section>
+
       
       <section class="section advantages">
     <div class="container section-advantages">
