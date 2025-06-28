@@ -16,10 +16,12 @@
 .form-label {
   display: flex;
   flex-direction: column;
+  gap: 8px;
 }
 
 .form-input {
   padding: 8px 12px;
+
   /* 
     color: #212121;
     border: 1px solid #212121;
@@ -32,12 +34,16 @@
 .form-textarea {
   padding: 12px;
   resize: none;
+  height: 180px;
 }
 
 .form-input,
 .form-textarea {
   font-family: inherit;
   font-size: inherit;
+  background: rgba(3, 10, 6, 0.05);
+  border: 1px solid rgba(3, 10, 6, 0.15);
+  border-radius: 6px;
 }
 
 .support-img {
