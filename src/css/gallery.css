@@ -3,51 +3,130 @@
 }
 
 .gallery-box {
-display: flex;
-flex-direction: column;
-align-items: center;
-gap: 24px;
-margin-bottom: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 32px;
 }
 
 .gallery-title {
-font-family: "Comfortaa", sans-serif;
-font-weight: 700;
-font-size: 48px;
-line-height: 1.2;
-letter-spacing: 0.01em;
-text-align: center;
-color: #030a06;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: #030a06;
 }
 
 .gallery-sab-title {
-font-family: "Fira Sans", sans-serif;
-font-weight: 400;
-font-size: 18px;
-line-height: 1.6;
-text-align: center;
-color: #030a06;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
+    color: #030a06;
 }
 
-/* --- Стилі для галереї на основі ul/li та Grid --- */
 .gallery-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Три рівні колонки */
-    gap: 24px; /* Проміжок між li елементами */
-    align-items: stretch; /* Забезпечує, що li розтягуються на всю висоту осередку */
-}
-/* Стилі для першого li (з двома фото одне над одним) */
-.gallery-item-col-one {
-    display: flex; /* Робимо цей li Flex-контейнером */
-    flex-direction: column; /* Розміщуємо фотографії одне над одним */
-    gap: 24px; /* Проміжок між двома фотографіями всередині цього li */
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
 }
 
-/* Стилі для всіх зображень у галереї */
 .gallery-img {
-    width: 100%; /* Зображення займає всю ширину свого батьківського контейнера (li або div всередині li) */
-    height: 100%; /* Зображення розтягується на всю висоту свого контейнера */
-    object-fit: cover; /* Обрізає зображення, щоб воно заповнило контейнер, зберігаючи пропорції */
-    display: block; /* Видаляємо зайвий простір під зображеннями */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
     border-radius: 32px;
+}
+
+#item2 {
+    order: 1;
+}
+
+#item3 {
+    order: 2;
+}
+
+#item4 {
+    order: 3;
+}
+
+#item1 {
+    order: 4;
+}
+
+.item3, .item4 {
+    aspect-ratio: 1/ 1;
+}
+
+.gallery-item {
+    width: 100%;
+}
+
+/* 🧩 Планшет 768px */
+@media only screen and (min-width: 768px) {
+    .gallery-list {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "item1 item3"
+            "item4 item2";
+            gap: 24px;
+    }
+
+    #item1 {
+        grid-area: item1;
+    }
+
+    #item2 {
+        grid-area: item2;
+    }
+
+    #item3 {
+        grid-area: item3;
+    }
+
+    #item4 {
+        grid-area: item4;
+    }
+}
+
+@media only screen and (min-width: 1140px) {
+    .gallery-title {
+        font-size: 48px;
+    }
+
+    .gallery-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 24px;
+        align-items: stretch;
+    }
+
+        #item1,
+        #item2 {
+            grid-column: 1;
+        }
+    
+        #item1,
+        #item2 {
+            display: flex;
+            flex-direction: column;
+        }
+    
+        #item3 {
+            grid-column: 2;
+            grid-row: 1 / span 2;
+            height: 100%;
+        }
+    
+        #item4 {
+            grid-column: 3;
+            grid-row: 1 / span 2;
+            height: 100%;
+        }
+
 }
