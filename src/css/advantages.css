@@ -59,6 +59,8 @@
 @media only screen and (min-width: 768px) {
     .section-title.tagline {
         margin-bottom: 16px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .section-title.section-title-advantages {
@@ -76,7 +78,7 @@
 
     .section-text.section-text-advantages {
         margin-bottom: 0;
-        font-size: 18px;
+        font-size: 16px;
         max-width: 704px;
     }
 
@@ -127,6 +129,8 @@
     .section-title.section-title-advantages {
         font-size: 48px;
         max-width: 768px;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .section-title.list-title {
@@ -140,7 +144,6 @@
     }
 
     .section-text.section-text-advantages {
-        font-size: 16px;
         max-width: 422px;
     }
 
