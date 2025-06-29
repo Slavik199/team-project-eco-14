@@ -1,3 +1,4 @@
+
 .gallery {
     background: #ebf8ed;
 }
@@ -17,15 +18,7 @@
     line-height: 1.2;
     letter-spacing: 0.01em;
     text-align: center;
-    color: #030a06;
-}
-
-.gallery-sab-title {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.6;
-    text-align: center;
+    margin-bottom: 32px;
     color: #030a06;
 }
 
@@ -93,12 +86,10 @@
 
     #item1 {
         grid-area: item1;
-
     }
 
     #item2 {
         grid-area: item2-area;
-
     }
 
     #item3 {
@@ -164,5 +155,4 @@
         grid-row: 1 / span 2;
         height: 100%;
     }
-
 }
