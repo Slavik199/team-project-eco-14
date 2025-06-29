@@ -10,7 +10,7 @@
   display: block;
 }
 
-.logo-icon {
+.header-logo-icon {
   display: block;
   width: 84px;
   height: 36px;
@@ -46,7 +46,7 @@
     margin-right: 266px;
   }
 
-  .logo-icon {
+  .header-logo-icon {
     width: 106px;
     height: 45px;
   }
