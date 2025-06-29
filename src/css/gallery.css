@@ -49,7 +49,6 @@
     width: 100%;
 }
 
-/* 🧩 Планшет 768px */
 @media only screen and (min-width: 768px) {
     .gallery-list {
         display: grid;
@@ -88,6 +87,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         align-items: stretch;
+        grid-template-rows: none;
     }
 
     #item1 {
