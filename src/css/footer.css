@@ -30,7 +30,6 @@
   line-height: 1.6;
   color: #030a06;
 }
-
 .footer-media-list {
   display: flex;
   align-items: center;
@@ -134,6 +133,7 @@
   .footer-logo {
     margin-left: 0;
     margin-right: 177px;
+    margin-bottom: 0;
   }
   .footer-media-list,
   .footer-nav-list,
