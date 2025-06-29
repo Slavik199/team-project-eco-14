@@ -57,7 +57,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .section-title {
+  .feedbacks-title {
     margin: 0 auto 80px;
     max-width: 560px;
     text-align: center;
