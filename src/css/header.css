@@ -35,6 +35,10 @@
   .header-container {
     padding: 14px 32px;
   }
+  .burger-icon {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
