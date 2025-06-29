@@ -73,22 +73,26 @@
     .gallery-list {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
-            "item1 item3"
-            "item4 item2";
+            "item1 item3-area"
+            "item4 item3-area"
+            "item4 item2-area";
         gap: 24px;
     }
 
     #item1 {
         grid-area: item1;
+
     }
 
     #item2 {
-        grid-area: item2;
+        grid-area: item2-area;
+
     }
 
     #item3 {
-        grid-area: item3;
+        grid-area: item3-area;
     }
 
     #item4 {
@@ -107,13 +111,13 @@
         align-items: stretch;
     }
 
-        #item1 {
-            grid-row: 1;
-        }
-    
-        #item2 {
-            grid-row: 2;     
-        }
+    #item1 {
+        grid-row: 1;
+    }
+
+    #item2 {
+        grid-row: 2;
+    }
 
     #item1,
     #item2 {
