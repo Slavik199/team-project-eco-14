@@ -1,11 +1,8 @@
 .hero {
   padding-top: 64px;
-  padding-bottom: 64px;
+  padding-bottom: 32px;
 }
-.container {
-}
-.hero-container {
-}
+
 .hero-title {
   display: block;
   font-size: 40px;
@@ -21,7 +18,19 @@
   text-align: center;
   margin-bottom: 24px;
   width: 100%;
+  transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    cursor 350ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
+
+.hero-btn:hover,
+.hero-btn:focus {
+  cursor: url(/img/Leaf-cursor.svg), auto;
+  border: 1px solid #113916;
+  background: #113916;
+  opacity: 0.6;
+}
+
 .hero-image {
   border-radius: 40px;
 }
@@ -29,7 +38,7 @@
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 0px;
   }
 
   .hero-wrapper {
@@ -41,9 +50,6 @@
     max-width: 340px;
     margin-right: 24px;
     margin-bottom: 0;
-  }
-
-  .hero-advertise-wrapper {
   }
 
   .hero-text {
