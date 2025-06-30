@@ -1,0 +1,71 @@
+.hero {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.container {
+}
+.hero-container {
+}
+.hero-title {
+  display: block;
+  font-size: 40px;
+  color: #030a06;
+  margin-bottom: 20px;
+}
+.hero-text {
+  color: #030a06;
+  margin-bottom: 24px;
+}
+.hero-btn {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 24px;
+  width: 100%;
+}
+.hero-image {
+  border-radius: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .hero-wrapper {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    max-width: 340px;
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
+
+  .hero-advertise-wrapper {
+  }
+
+  .hero-text {
+    margin-bottom: 32px;
+    font-size: 18px;
+  }
+
+  .hero-btn {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    padding-bottom: 0px;
+  }
+
+  .hero-title {
+    min-width: 640px;
+    text-align: left;
+    font-size: 56px;
+    margin-right: 32px;
+  }
+}
