@@ -22,6 +22,7 @@ a {
   color: currentColor;
   text-decoration: none;
 }
+
 a:hover,
 a:focus {
   cursor: url(/img/Leaf-cursor.svg), auto;
