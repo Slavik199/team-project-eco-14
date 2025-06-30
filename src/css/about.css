@@ -16,12 +16,13 @@
     height: 220px;
   }
 
-  .about-subtitle {
-    font-size: 36px;
-    max-width: 100%;
-  }
   .section-text-about {
     font-size: 16px;
+    max-width: 100%;
+  }
+
+  .about-subtitle {
+    font-size: 36px;
     max-width: 100%;
   }
 }
