@@ -1,6 +1,6 @@
 .hero {
   padding-top: 64px;
-  padding-bottom: 32px;
+  padding-bottom: 64px;
 }
 
 .hero-title {
@@ -38,7 +38,6 @@
 @media screen and (min-width: 768px) {
   .hero {
     padding-top: 32px;
-    padding-bottom: 0px;
   }
 
   .hero-wrapper {
@@ -65,7 +64,6 @@
 
 @media screen and (min-width: 1440px) {
   .hero {
-    padding-bottom: 0px;
   }
 
   .hero-title {
