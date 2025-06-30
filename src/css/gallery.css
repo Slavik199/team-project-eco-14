@@ -1,3 +1,4 @@
+
 .gallery {
     background: #ebf8ed;
 }
@@ -27,6 +28,8 @@
     font-size: 18px;
     line-height: 1.6;
     text-align: center;
+=======
+    margin-bottom: 32px;
     color: #030a06;
 }
 
@@ -88,7 +91,11 @@
     }
 
     #item2 {
+
         grid-area: item2;
+
+        grid-area: item2-area;
+
     }
 
     #item3 {
@@ -139,6 +146,7 @@
         grid-row: 1 / span 2;
         height: 100%;
     }
+
 
     .gallery-img {
         height: 100%;
