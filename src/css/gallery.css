@@ -8,7 +8,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
 }
 
 .gallery-title {
@@ -18,7 +18,16 @@
     line-height: 1.2;
     letter-spacing: 0.01em;
     text-align: center;
-    margin-bottom: 32px;
+    color: #030a06;
+    padding-bottom: 16px;
+}
+
+.gallery-sab-title {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: center;
     color: #030a06;
 }
 
@@ -62,19 +71,13 @@
 }
 
 @media only screen and (min-width: 768px) {
-
-    .gallery-sab-title,
-    .p {
-        padding-bottom: 32px;
-    }
-
     .gallery-box {
-        margin-bottom: 24px;
+        margin-bottom: 32px;
     }
 
-        .gallery-title {
-            font-size: 36px;
-        }
+    .gallery-title {
+        padding-bottom: 24px;
+    }
 
     .gallery-list {
         display: grid;
@@ -89,10 +92,12 @@
 
     #item1 {
         grid-area: item1;
+
     }
 
     #item2 {
         grid-area: item2-area;
+
     }
 
     #item3 {
@@ -105,18 +110,14 @@
 }
 
 @media only screen and (min-width: 1440px) {
-
-    .gallery-sab-title,
-    .p {
-        padding-bottom: 32px;
-    }
-
     .gallery-box {
-        margin-bottom: 24px;
+        margin-bottom: 32px;
     }
 
     .gallery-title {
         font-size: 48px;
+        padding-bottom: 24px;
+        margin-bottom: 0;
     }
 
     .gallery-list {
@@ -156,4 +157,5 @@
         grid-row: 1 / span 2;
         height: 100%;
     }
+
 }

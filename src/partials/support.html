@@ -1,8 +1,8 @@
-<section class="section support">
+<section id="support" class="section support">
   <div class="container">
     <div class="form-wrap">
       <h2 class="section-title">Залишились питання? Зв'яжіться з нами!</h2>
-      <p class="section-text">Ми тут, щоб допомогти!</p>
+      <h3 class="support-subtitle">Ми тут, щоб допомогти!</h3>
       <form class="form">
         <label class="form-label" for="user-name">
           Ім'я
@@ -12,6 +12,8 @@
             id="user-name"
             type="text"
             placeholder="Іван"
+            minlength="3"
+            maxlength="200"
           />
         </label>
         <label class="form-label" for="input-email">
@@ -22,6 +24,7 @@
             id="input-email"
             type="email"
             placeholder="hello@ecotote.com"
+            maxlength="30"
           />
         </label>
         <label class="form-label" for="user-comment">
@@ -31,6 +34,9 @@
             name="user-comment"
             placeholder="Введіть своє повідомлення..."
             id="user-comment"
+            required
+            minlength="10"
+            maxlength="200"
           ></textarea>
         </label>
         <button class="btn form-btn" type="submit">Надіслати</button>

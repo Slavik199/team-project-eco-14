@@ -3,11 +3,12 @@
   align-items: center;
   justify-content: space-between;
   background-color: #75d281;
-  padding: 8px 12px;
+  padding: 0;
 }
 
 .header-logo {
   display: block;
+  padding: 14px 0 14px 20px;
 }
 
 .header-logo-icon {
@@ -25,35 +26,32 @@
   padding: 0;
   border: none;
   background-color: transparent;
-  width: 48px;
-  height: 48px;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 20px;
 }
+
 .burger-icon {
-  width: 32px;
-  height: 32px;
   display: block;
   fill: #030a06;
 }
 
 @media screen and (min-width: 768px) {
-  .header-container {
-    padding: 8px 16px 8px 32px;
+  .header-logo {
+    padding-left: 32px;
   }
-  .burger-icon {
-    width: 24px;
-    height: 24px;
+
+  .burger-btn {
+    margin-right: 27px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .header-container {
-    padding: 14px 64px;
-  }
-
   .header-logo {
+    padding-left: 64px;
     margin-right: 266px;
   }
 
@@ -76,17 +74,21 @@
     align-items: center;
     gap: 32px;
   }
+
   .contacts-link,
   .nav-link {
     display: block;
     font-size: 16px;
     line-height: 1.6;
+    padding: 23px 0;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   .contacts {
     display: flex;
     align-items: center;
     font-style: normal;
+    padding-right: 64px;
     margin-left: auto;
   }
 
@@ -110,6 +112,9 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu.is-open {
@@ -152,6 +157,8 @@
   align-items: center;
   justify-content: center;
   border: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-close-icon {
@@ -180,6 +187,7 @@
   font-size: 16px;
   line-height: 1.6;
   color: #030a06;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-contacts {
