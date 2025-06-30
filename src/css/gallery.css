@@ -109,12 +109,6 @@
 }
 
 @media only screen and (min-width: 1440px) {
-
-    .gallery-sab-title,
-    .p {
-        padding-bottom: 32px;
-    }
-
     .gallery-box {
         margin-bottom: 32px;
     }
