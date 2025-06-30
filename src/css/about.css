@@ -4,58 +4,36 @@
       rgba(0, 0, 0, 0.4),
       rgba(0, 0, 0, 0.4)
     ),
-    url(../img/about/about-bg@1x.jpg);
+    url(../img/about/about-bg-mob@1x.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+
   margin: 0 auto;
-  padding: 112px 64px;
-  max-width: 1440px;
-  height: 462px;
+  padding: 64px 16px;
+  width: 320px;
+  height: 348px;
 }
 
 .div-about {
-  max-width: 768px;
-  height: 256px;
+  width: 288px;
+  height: 220px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.about-title {
-  max-width: 94px;
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  color: white;
-  margin-bottom: 16px;
-  text-align: center;
-}
-
 .about-subtitle {
-  max-width: 629px;
-  font-family: 'Comfortaa', sans-serif;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.2;
-  letter-spacing: 0.01em;
-  text-align: center;
-  color: white;
-  margin-bottom: 24px;
+  font-size: 36px;
+  max-width: 100%;
 }
 
 .section-text-about {
-  max-width: 574px;
-  font-family: 'Fira Sans', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.6;
-  text-align: center;
-  color: white;
+  font-size: 16px;
+  max-width: 100%;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1439px) {
+@media only screen and (min-width: 768px) {
   .about {
     background-image: linear-gradient(
         to bottom,
@@ -64,45 +42,51 @@
       ),
       url(../img/about/about-bg-tab@1x.jpg);
     padding: 80px 32px;
-    max-width: 768px;
+    width: 768px;
     height: 325px;
   }
 
   .div-about {
-    max-width: 768px;
+    width: 768px;
     height: 165px;
   }
 
   .about-subtitle {
     font-size: 36px;
-    max-width: 100%;
   }
 }
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 1440px) {
   .about {
     background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.4),
         rgba(0, 0, 0, 0.4)
       ),
-      url(../img/about/about-bg-mob@1x.jpg);
-    padding: 64px 16px;
-    max-width: 320px;
-    height: 348px;
+      url(../img/about/about-bg@1x.jpg);
+    padding: 112px 64px;
+    width: 1440px;
+    height: 462px;
   }
 
   .div-about {
-    max-width: 288px;
-    height: 220px;
+    width: 768px;
+    height: 256px;
+  }
+
+  .about-title {
+    font-size: 16px;
+    max-width: 94px;
   }
 
   .about-subtitle {
-    font-size: 36px;
-    max-width: 100%;
+    font-size: 56px;
+    max-width: 629px;
+    margin-bottom: 24px;
   }
+
   .section-text-about {
-    font-size: 16px;
-    max-width: 100%;
+    font-size: 18px;
+    max-width: 574px;
   }
 }
