@@ -2,7 +2,7 @@
     padding-top: 32px;
     padding-bottom: 32px;
   }
-.section-title,
+
 .section-title-assortment {
     text-align: center;
     margin-bottom: 32px;
@@ -68,7 +68,7 @@
     width: 310px;
     height: 372px;
     object-fit: cover;
-    margin-bottom: 16px; /* расстояние до h4 */
+    margin-bottom: 16px;
   }
   .item-title {
     font-size: 18px;
@@ -80,10 +80,10 @@
   }
   .item-text {
     width: 310px;
-    min-height: 130px; /* фиксируем высоту блока текста (подбери под себя) */
+    min-height: 130px; 
     display: flex;
     flex-direction: column;
-    justify-content: center; /* центрируем текст внутри этого блока */
+    justify-content: center; 
     gap: 8px;
   }
 
@@ -92,7 +92,7 @@
     font-weight: 600;
     line-height: 1.6;
     color: #030a06;
-    margin-bottom: 16px; /* расстояние до кнопки */
+    margin-bottom: 16px; 
     font-family: "Fira Sans", sans-serif;
   }
 
@@ -111,15 +111,19 @@
     white-space: nowrap;
     padding: 0;
   
+
+  
 }
 
 .btn-buy:hover,
 .btn-buy:focus,
 .btn-buy:active {
-    background-color: #000000;              
-    border-color: #000000;     
+    background-color: #113916;              
+    border-color: #113916;     
     outline: none;
-    box-shadow: none;        
+    box-shadow: none; 
+    color: #fff;  
+    opacity: 0.6;     
   }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
@@ -128,18 +132,7 @@
     gap: 24px;
     row-gap: 24px;
   }
-
-
-  .btn-buy:hover,
-  .btn-buy:focus,
-   .btn-buy:active {
-      background-color: #000000;             
-      border-color: #000000;     
-      outline: none;
-      box-shadow: none;        
-    }
   }
-
 
 
 @media screen and (min-width: 1024px) {
@@ -159,13 +152,6 @@
     height: 372px;
   }
 
-  .btn-buy:hover,
-  .btn-buy:focus,
-  .btn-buy:active {
-      background-color: #000000;              
-      border-color: #000000;     
-      outline: none;
-      box-shadow: none;        
-    }
+  
   
 }
