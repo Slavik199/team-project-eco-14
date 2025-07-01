@@ -124,12 +124,11 @@ textarea:not(:placeholder-shown):invalid {
   transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 350ms cubic-bezier(0.4, 0, 0.2, 1),
     cursor 350ms cubic-bezier(0.075, 0.82, 0.165, 1);
-  transition: all 0.3s ease-in-out;
 }
 
 .form-btn:hover,
 .form-btn:focus {
-  cursor: url(/img/leaf-cursor.svg), auto;
+  cursor: url(/img/leaf-cursor.svg) auto;
   border: 1px solid #113916;
   background: #113916;
   opacity: 0.6;
