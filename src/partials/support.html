@@ -1,0 +1,75 @@
+<section id="support" class="section support">
+  <div class="container">
+    <div class="form-wrap">
+      <h2 class="section-title">Залишились питання? Зв'яжіться з нами!</h2>
+      <h3 class="support-subtitle">Ми тут, щоб допомогти!</h3>
+      <form class="form">
+        <label class="form-label" for="user-name">
+          Ім'я
+          <input
+            class="form-input"
+            name="user-name"
+            id="user-name"
+            type="text"
+            placeholder="Іван"
+            minlength="5"
+            maxlength="64"
+          />
+        </label>
+        <label class="form-label" for="input-email">
+          Електронна пошта
+          <input
+            class="form-input"
+            name="input-email"
+            id="input-email"
+            type="email"
+            placeholder="hello@ecotote.com"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+          />
+        </label>
+        <label class="form-label" for="user-comment">
+          Повідомлення
+          <textarea
+            class="form-textarea"
+            name="user-comment"
+            placeholder="Введіть своє повідомлення..."
+            id="user-comment"
+            required
+            minlength="2"
+            maxlength="500"
+          ></textarea>
+        </label>
+        <button class="btn form-btn" type="submit">Надіслати</button>
+      </form>
+    </div>
+
+    <picture class="support-img">
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          /img/support/studio-space-descktop-min.jpg    1x,
+          /img/support/studio-space-descktop@2x-min.jpg 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /img/support/studio-space-tab-min.jpg    1x,
+          /img/support/studio-space-tab@2x-min.jpg 2x
+        "
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          /img/support/studio-space-mobile-min.jpg    1x,
+          /img/support/studio-space-mobile@2x-min.jpg 2x
+        "
+      />
+      <img
+        class="support-img"
+        src="/img/support/studio-space-descktop-min.jpg"
+        alt="studio begs space"
+      />
+    </picture>
+  </div>
+</section>

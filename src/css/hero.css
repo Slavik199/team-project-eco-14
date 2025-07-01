@@ -1,0 +1,75 @@
+.hero {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.hero-title {
+  display: block;
+  font-size: 40px;
+  color: #030a06;
+  margin-bottom: 20px;
+}
+.hero-text {
+  color: #030a06;
+  margin-bottom: 24px;
+}
+.hero-btn {
+  display: inline-block;
+  text-align: center;
+  margin-bottom: 24px;
+  width: 100%;
+  transition: background-color 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 350ms cubic-bezier(0.4, 0, 0.2, 1),
+    cursor 350ms cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  cursor: url(/img/Leaf-cursor.svg), auto;
+  border: 1px solid #113916;
+  background: #113916;
+  opacity: 0.6;
+}
+
+.hero-image {
+  border-radius: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 32px;
+  }
+
+  .hero-wrapper {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  .hero-title {
+    max-width: 340px;
+    margin-right: 24px;
+    margin-bottom: 0;
+  }
+
+  .hero-text {
+    margin-bottom: 32px;
+    font-size: 18px;
+  }
+
+  .hero-btn {
+    width: auto;
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+  }
+
+  .hero-title {
+    min-width: 640px;
+    text-align: left;
+    font-size: 56px;
+    margin-right: 32px;
+  }
+}

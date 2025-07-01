@@ -1,30 +1,106 @@
 <header class="header">
-  <div class="container header-containet">
-    <a class="header-logo" href="../index.html">
-      <svg class="" width="104" height="39">
-        <use href=""></use>
-      </svg>
-    </a>
-    <nav>
-      <ul>
-        <li><a href="">Про нас</a></li>
-        <li><a href="">Переваги</a></li>
-        <li><a href="">Асортимент</a></li>
-        <li><a href="">Галерея</a></li>
-        <li><a href="">Відгуки</a></li>
-        <li><a href="">Контакти</a></li>
+  <div class="container header-container">
+    <a class="header-logo" href="/index.html">
+      <img
+        class="header-logo-icon"
+        src="/img/logo-icon.svg"
+        alt="logo"
+        width="84"
+        height="36"
+    /></a>
+    <nav class="header-nav">
+      <ul class="nav-list">
+        <li class="nav-item"><a class="nav-link" href="#about">Про нас</a></li>
+        <li class="nav-item">
+          <a class="nav-link" href="#advantages">Переваги</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#assortment">Асортимент</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#gallery">Галерея</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#feedbacks">Відгуки</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#support">Контакти</a>
+        </li>
       </ul>
     </nav>
-    <address>
-      <ul>
-        <li><a href="tel:+380999091122">+38 (099) 909 11 22</a></li>
-        <li><a href="milto:hello@ecotote.com">hello@ecotote.com</a></li>
+    <address class="contacts">
+      <ul class="contacts-list">
+        <li class="contacts-item">
+          <a class="contacts-link" href="tel:+380999091122"
+            >+38 (099) 909 11 22</a
+          >
+        </li>
+        <li class="contacts-item">
+          <a class="contacts-link" href="mailto:hello@ecotote.com"
+            >hello@ecotote.com</a
+          >
+        </li>
       </ul>
     </address>
     <button class="burger-btn" type="button" data-menu-open>
-      <svg class="" width="24" height="24">
-        <use href=""></use>
+      <svg class="burger-icon" width="32" height="32">
+        <use href="/img/sprite.svg#icon-burger"></use>
       </svg>
     </button>
+  </div>
+  <div class="menu" data-menu>
+    <div class="container menu-container">
+      <div class="menu-header">
+        <a class="menu-logo" href="/index.html"
+          ><img
+            class="menu-logo-icon"
+            src="/img/logo-icon.svg"
+            alt="logo"
+            width="84"
+            height="36"
+        /></a>
+        <button class="menu-close" data-menu-close>
+          <svg class="menu-close-icon" width="16" height="16">
+            <use href="/img/sprite.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+      <nav class="menu-nav">
+        <ul class="menu-nav-list">
+          <li class="menu-nav-item">
+            <a class="menu-nav-link" href="#about">Про нас</a>
+          </li>
+          <li class="menu-nav-item">
+            <a class="menu-nav-link" href="#advantages">Переваги</a>
+          </li>
+          <li class="menu-nav-item">
+            <a class="menu-nav-link" href="#assortment">Асортимент</a>
+          </li>
+          <li class="menu-nav-item">
+            <a class="menu-nav-link" href="#gallery">Галерея</a>
+          </li>
+          <li class="menu-nav-item">
+            <a class="menu-nav-link" href="#feedbacks">Відгуки</a>
+          </li>
+          <li class="menu-nav-item">
+            <a class="menu-nav-link" href="#support">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="menu-contacts">
+        <ul class="menu-contacts-list">
+          <li class="menu-contacts-item">
+            <a class="menu-contacts-link" href="tel:+380999091122"
+              >+38 (099) 909 11 22</a
+            >
+          </li>
+          <li class="menu-contacts-item">
+            <a class="menu-contacts-link" href="mailto:hello@ecotote.com"
+              >hello@ecotote.com</a
+            >
+          </li>
+        </ul>
+      </address>
+    </div>
   </div>
 </header>
