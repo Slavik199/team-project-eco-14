@@ -12,8 +12,8 @@
             id="user-name"
             type="text"
             placeholder="Іван"
-            minlength="3"
-            maxlength="200"
+            minlength="5"
+            maxlength="64"
           />
         </label>
         <label class="form-label" for="input-email">
@@ -24,7 +24,7 @@
             id="input-email"
             type="email"
             placeholder="hello@ecotote.com"
-            maxlength="30"
+            pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
           />
         </label>
         <label class="form-label" for="user-comment">
@@ -35,8 +35,8 @@
             placeholder="Введіть своє повідомлення..."
             id="user-comment"
             required
-            minlength="10"
-            maxlength="200"
+            minlength="2"
+            maxlength="500"
           ></textarea>
         </label>
         <button class="btn form-btn" type="submit">Надіслати</button>
@@ -59,7 +59,7 @@
         "
       />
       <source
-        media="(max-width: 768px)"
+        media="(max-width: 767px)"
         srcset="
           /img/support/studio-space-mobile-min.jpg    1x,
           /img/support/studio-space-mobile@2x-min.jpg 2x
