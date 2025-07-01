@@ -7,6 +7,7 @@
   display: block;
   margin-bottom: 48px;
 }
+
 .footer-logo-icon {
   width: 280px;
   height: 102px;
@@ -27,7 +28,21 @@
   font-size: 16px;
   line-height: 1.6;
   color: #030a06;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.footer-media-link {
+  display: flex;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-contacts-link:hover,
+.footer-nav-link:hover,
+.footer-contacts-link:focus,
+.footer-nav-link:focus {
+  color: #113916;
+}
+
 .footer-media-list {
   display: flex;
   align-items: center;
@@ -36,11 +51,17 @@
   margin-bottom: 48px;
 }
 
+.footer-media-link:hover .footer-media-icon,
+.footer-media-link:focus .footer-media-icon {
+  fill: #113916;
+}
+
 .footer-media-icon {
   display: block;
   width: 32px;
   height: 32px;
   fill: #000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-contacts {
   font-style: normal;
