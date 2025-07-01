@@ -19,6 +19,10 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .assortment-list {
+    column-gap: 24px;
+    row-gap: 64px;
+  }
   .assortment-list-item {
     width: calc((100% - 24px * 3) / 4);
   }
