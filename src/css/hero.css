@@ -25,7 +25,7 @@
 
 .hero-btn:hover,
 .hero-btn:focus {
-  cursor: url(/img/leaf-cursor.svg), auto;
+  cursor: url(/img/Leaf-cursor.svg), auto;
   border: 1px solid #113916;
   background: #113916;
   opacity: 0.6;
