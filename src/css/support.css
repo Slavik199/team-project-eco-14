@@ -129,7 +129,7 @@ textarea:not(:placeholder-shown):invalid {
 
 .form-btn:hover,
 .form-btn:focus {
-  cursor: url(/img/Leaf-cursor.svg), auto;
+  cursor: url(/img/leaf-cursor.svg), auto;
   border: 1px solid #113916;
   background: #113916;
   opacity: 0.6;
