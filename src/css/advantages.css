@@ -24,7 +24,7 @@
     max-width: 288px;
 }
 
-.section-text.section-text-advantages {
+.section-text.section-text-advantages.text {
     margin-bottom: 48px;
     text-align: left;
     max-width: 288px;
@@ -33,7 +33,13 @@
 
 .advantages-list {}
 
-.advantages-list-item {}
+.advantages-list-item {
+    margin-bottom: 48px;
+}
+
+.advantages-list-item.no-margin {
+    margin-bottom: 0;
+}
 
 .advantages-item {}
 
@@ -52,9 +58,7 @@
     max-width: 288px;
 }
 
-.section-text.section-text-advantages.no-margin {
-    margin-bottom: 0;
-}
+
 
 @media only screen and (min-width: 768px) {
     .section-title.tagline {
@@ -74,6 +78,7 @@
 
     .section-text.section-text-advantages.text {
         margin-bottom: 32px;
+        max-width: 704px;
     }
 
     .section-text.section-text-advantages {
@@ -81,6 +86,11 @@
         font-size: 16px;
         max-width: 704px;
     }
+
+    .advantages-list-item {
+        margin-bottom: 0;
+    }
+
 
     .img-advantages {
         width: 340px;
