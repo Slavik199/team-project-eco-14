@@ -112,7 +112,7 @@ textarea:not(:placeholder-shown):invalid {
 }
 
 .form-btn {
-  cursor: url(/img/leaf-cursor.svg), auto;
+  cursor: url(/img/Leaf-cursor.svg), auto;
   border: 1px solid #030a06;
   border-radius: 6px;
   padding: 12px 24px;
@@ -130,7 +130,7 @@ textarea:not(:placeholder-shown):invalid {
 
 .form-btn:hover,
 .form-btn:focus {
-  cursor: url(/img/leaf-cursor.svg) auto;
+  cursor: url(/img/Leaf-cursor.svg) auto;
   border: 1px solid #113916;
   background: #113916;
   opacity: 0.6;
@@ -183,8 +183,8 @@ textarea:not(:placeholder-shown):invalid {
     width: 644px;
     height: 767px;
     background-image: image-set(
-      url(../img/support/studio-space-descktop-min.jpg) 1x,
-      url(../img/support/studio-space-descktop@2x-min.jpg) 2x
+      url(/img/support/studio-space-descktop-min.jpg) 1x,
+      url(/img/support/studio-space-descktop@2x-min.jpg) 2x
     );
   }
 }
