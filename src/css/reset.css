@@ -32,6 +32,7 @@ button {
 }
 button:hover,
 button:focus {
+  cursor: url(/img/leaf-cursor.svg), auto;
   border: 1px solid #113916;
   background-color: #113916;
   opacity: 0.6;
