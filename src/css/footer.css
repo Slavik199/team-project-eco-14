@@ -1,6 +1,9 @@
+.footer {
+  background-color: #75d281;
+}
+
 .footer-container {
   padding: 48px 20px;
-  background-color: #75d281;
   width: 100%;
 }
 .footer-logo {
