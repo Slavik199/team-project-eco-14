@@ -158,23 +158,37 @@ textarea:not(:placeholder-shown):invalid {
   height: 428px;
   border-radius: 40px;
   overflow: hidden;
-  background-image: image-set(
+  background-image: url(../img/support/studio-space-mobile-min.jpg);
+  /* background-image: image-set(
     url(/img/support/studio-space-mobile-min.jpg) 1x,
     url(/img/support/studio-space-mobile@2x-min.jpg) 2x
-  );
+  ); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+@media (min-resolution: 2x) {
+  .support-img {
+    background-image: url(../img/support/studio-space-mobile@2x-min.jpg);
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .support-img {
     width: 704px;
     height: 428px;
-    background-image: image-set(
+    background-image: url(../img/support/studio-space-tab-min.jpg);
+    /* background-image: image-set(
       url(/img/support/studio-space-tab-min.jpg) 1x,
       url(/img/support/studio-space-tab@2x-min.jpg) 2x
-    );
+    ); */
+  }
+
+  @media (min-resolution: 2x) {
+    .support-img {
+      background-image: url(../img/support/studio-space-tab@2x-min.jpg);
+    }
   }
 }
 
@@ -182,9 +196,16 @@ textarea:not(:placeholder-shown):invalid {
   .support-img {
     width: 644px;
     height: 767px;
-    background-image: image-set(
+    background-image: url(../img/support/studio-space-descktop-min.jpg);
+    /* background-image: image-set(
       url(/img/support/studio-space-descktop-min.jpg) 1x,
       url(/img/support/studio-space-descktop@2x-min.jpg) 2x
-    );
+    ); */
+  }
+
+  @media (min-resolution: 2x) {
+    .support-img {
+      background-image: url(../img/support/studio-space-descktoe@2x-min.jpg);
+    }
   }
 }
